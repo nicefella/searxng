@@ -21,6 +21,8 @@ ENV INSTANCE_NAME=searxng \
 
 WORKDIR /usr/local/searxng
 
+ENV HOST 0.0.0.0
+
 COPY requirements.txt ./requirements.txt
 
 RUN apk add --no-cache -t build-dependencies \
